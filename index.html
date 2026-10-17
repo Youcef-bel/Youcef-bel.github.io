@@ -12,28 +12,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
-    <header class="container header active" id="home">
+    <nav class="top-nav" aria-label="Main navigation">
+        <div class="nav-brand">
+            <span>YB</span>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#chat">Chat</a>
+            <a class="nav-link" href="#portfolio">Work</a>
+            <a class="nav-link" href="#certificates">Certificates</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="header section" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/IMG_20250130_134550_152.jpg" alt="">
+                    <img src="media/profile.png" alt="Youcef Belmokhtar portrait" loading="lazy">
                 </div>
             </div>
             <div class="right-header">
                 <h2 class="name">
-                    Hi, I'm <span>Youcef Belmokhtar</span></h2>
-                <h1 class="headline">Junior Data Scientist</h1>
+                    Hi, I'm <span>Youcef Belmokhtar</span>
+                </h2>
+                <h1 class="headline">Data Scientist</h1>
                 <p class="tagline">
                     <i class="fas fa-brain"></i> Machine Learning • <i class="fas fa-chart-line"></i> Predictive Analytics • <i class="fas fa-robot"></i> AI Solutions
                 </p>
                 <p>
-                    Specialized in building end-to-end data solutions that drive business impact. Expert in inventory forecasting, 
-                    process automation, and ML-powered web applications. I transform complex data into actionable insights 
-                    using Python, Flask, and advanced machine learning techniques.
+                    Specialized in building end-to-end data solutions that drive business impact, from predictive modeling and inventory optimization to AI-powered applications and automated workflows. Experienced in Python, SQL, Flask, MySQL, scikit-learn, PyTorch, Power BI, and REST APIs, with hands-on experience in time-series forecasting, machine learning, LLMs, AI agents, and data pipeline automation. I combine quantitative analysis and practical engineering to turn complex data into actionable insights and scalable business solutions.
                 </p>
                 <div class="btn-con">
-                    <a href="https://github.com/Youcef-bel/Youcef-bel.github.io/raw/master/Data%20analyst.pdf" class="main-btn">
+                    <a href="media/YOUCEF_BELMOKHTAR_DS-portfolio.pdf" class="main-btn resume-btn" download="YOUCEF_BELMOKHTAR_DS-portfolio.pdf">
                         <span class="btn-text">Download CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -45,252 +57,112 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+    <main class="page-shell">
+        <section class="container chat-section" id="chat">
+            <div class="chat-heading">
+                <p class="chat-eyebrow">Curious about my work?</p>
+                <h2 class="chat-title">Chat with <span>me</span></h2>
+                <p>Ask about my experience, projects, or skills.</p>
             </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Professional Profile</h4>
-                    <p>
-                        Junior Data Scientist with proven experience building end-to-end data solutions and delivering measurable 
-                        business impact. Currently working remotely at <strong>TweezGroup</strong>, where I reduced order processing 
-                        time by 30% through intelligent supplier allocation algorithms.
-                    </p>
-                    <p>
-                        I specialize in developing Flask web applications, ML forecasting models, and automated data pipelines. 
-                        My background in Quantitative Economics combined with hands-on experience in Python, SQL, and machine 
-                        learning enables me to bridge the gap between data and actionable business insights.
-                    </p>
-                    <div class="btn-con">
-                        <a href="mailto:youcefbelmokhtar911@gmail.com" class="main-btn">
-                            <span class="btn-text">Contact Me</span>
-                            <span class="btn-icon"><i class="fas fa-envelope"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text"><i class="fas fa-percentage"></i> 30%</p>
-                            <p class="small-text">Processing Time <br /> Reduction</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text"><i class="fas fa-project-diagram"></i> 15+</p>
-                            <p class="small-text">ML & Data <br /> Projects</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text"><i class="fas fa-code"></i> 5+</p>
-                            <p class="small-text">Production <br /> Applications</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text"><i class="fas fa-calendar-alt"></i> 1+</p>
-                            <p class="small-text">Years of <br /> Experience</p>
-                        </div>
-                    </div>
-                 
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">Technical Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title"><i class="fab fa-python"></i> Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">90%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title"><i class="fas fa-robot"></i> Machine Learning</p>
-                        <div class="progress-con">
-                            <p class="prog-text">85%</p>
-                            <div class="progress">
-                                <span class="ml"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title"><i class="fas fa-database"></i> SQL (MySQL, PostgreSQL)</p>
-                        <div class="progress-con">
-                            <p class="prog-text">88%</p>
-                            <div class="progress">
-                                <span class="sql"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title"><i class="fas fa-flask"></i> Flask / Web Dev</p>
-                        <div class="progress-con">
-                            <p class="prog-text">85%</p>
-                            <div class="progress">
-                                <span class="flask"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title"><i class="fas fa-chart-bar"></i> Data Visualization</p>
-                        <div class="progress-con">
-                            <p class="prog-text">87%</p>
-                            <div class="progress">
-                                <span class="viz"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title"><i class="fas fa-square-root-alt"></i> Statistics & Analytics</p>
-                        <div class="progress-con">
-                            <p class="prog-text">83%</p>
-                            <div class="progress">
-                                <span class="stats"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h4 class="stat-title">Professional Experience & Education</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Jan 2025 - Present</p>
-                    <h5>Data Scientist <span> - TweezGroup (Remote)</span></h5>
-                    <p>
-                        • Reduced order processing time by 30% through intelligent algorithms<br>
-                        • Built Flask web app for Amazon Vendor Central operations<br>
-                        • Developed ML forecasting models for 14-day demand predictions<br>
-                        • Engineered automated allocation algorithms with MySQL integration
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Apr 2024 - Nov 2024</p>
-                    <h5>Cashier <span> - GULF BANK ALGERIA</span></h5>
-                    <p>
-                        Managed high-volume transactions with precision<br>
-                        Processed business payments and verified invoices
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Apr 2019 - May 2019</p>
-                    <h5>Economic Studies Officer (Intern) <span> - BAG MASCARA</span></h5>
-                    <p>
-                        Developed automated KPI dashboards using Excel<br>
-                        Prepared comprehensive business reports
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <p class="tl-duration">Jan 2020 - Jul 2022</p>
-                    <h5>Master in Quantitative Economics <span> - Mustapha Stambouli University</span></h5>
-                    <p>
-                        Applied econometric models and trend analysis<br>
-                        Analyzed external shocks impact on economic indicators
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <p class="tl-duration">Oct 2016 - Jan 2020</p>
-                    <h5>Degree in Quantitative Economics <span> - Mustapha Stambouli University</span></h5>
-                    <p>
-                        Mastered econometrics and data analysis techniques<br>
-                        Applied skills in multiple class projects
-                    </p>
-                </div>
-            </div>
+            <form class="chat-form" id="chat-form">
+                <label class="sr-only" for="chat-message">Your question</label>
+                <input id="chat-message" name="message" type="text" placeholder="e.g. Who is Youcef?" autocomplete="off" required>
+                <button class="chat-submit" type="submit">
+                    <span class="chat-submit-label">Ask</span>
+                    <span class="chat-spinner" aria-hidden="true"></span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </form>
+            <p class="chat-status" id="chat-status" role="status" aria-live="polite"></p>
+            <div class="chat-reply" id="chat-reply" aria-live="polite" hidden></div>
         </section>
+
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>Featured <span>Projects</span><span class="bg-text">My Work</span></h2>
             </div>
-            <p class="port-text">
-                Showcasing end-to-end data science and AI projects with real-world applications
-            </p>
+            <p class="port-text">Selected work across machine learning, forecasting, and practical AI.</p>
             <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="hover-items">
-                        <h3>KetabAI - AI PDF Book Chatbot</h3>
-                        <p class="project-tech">LangChain • Google Gemini API • RAG • Streamlit</p>
-                        <div class="icons">
-                            <a href="https://github.com/Youcef-bel" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                <article class="portfolio-item">
+                    <img src="media/ketabai.png" alt="KetabAI PDF book chatbot" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-category">Generative AI · RAG</p>
+                        <h3>KetabAI — AI PDF Book Chatbot</h3>
+                        <p class="project-description">Chat with books and documents using retrieval-augmented generation and Google Gemini.</p>
+                        <ul class="project-tags"><li>LangChain</li><li>Gemini</li><li>Streamlit</li></ul>
+                        <a href="https://github.com/Youcef-bel/KetabAI" class="project-link" target="_blank" rel="noreferrer">View on GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="hover-items">
+                </article>
+                <article class="portfolio-item">
+                    <img src="media/stroke_pred.png" alt="Stroke prediction web application" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-category">Machine Learning · Health</p>
                         <h3>Stroke Prediction Web App</h3>
-                        <p class="project-tech">scikit-learn • Streamlit • HealthTech ML</p>
-                        <div class="icons">
-                            <a href="https://github.com/Youcef-bel" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                        <p class="project-description">A web app that applies a machine-learning model to estimate stroke risk from health indicators.</p>
+                        <ul class="project-tags"><li>scikit-learn</li><li>Streamlit</li><li>Prediction</li></ul>
+                        <a href="https://github.com/Youcef-bel/StrokePredicitionModel" class="project-link" target="_blank" rel="noreferrer">View on GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="hover-items">
-                        <h3>Rental Prices Prediction Algeria</h3>
-                        <p class="project-tech">Web Scraping • GradientBoosting • BeautifulSoup</p>
-                        <div class="icons">
-                            <a href="https://github.com/Youcef-bel/DA_projects/blob/main/renting-prices-in-algeria-data-scraping-eda-ml.ipynb" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="portfolio-item">
+                    <img src="media/forecasting_ml.png" alt="Inventory forecasting model" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-category">Forecasting · Operations</p>
+                        <h3>Inventory Forecasting</h3>
+                        <p class="project-description">Statistical and machine-learning models forecast demand across 50+ SKUs to support inventory planning and prevent stockouts.</p>
+                        <ul class="project-tags"><li>XGBoost</li><li>TSB</li><li>Python</li><li>pandas</li></ul>
+                        <span class="project-link project-link-muted">Business project</span>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="hover-items">
-                        <h3>Amazon Vendor Central System</h3>
-                        <p class="project-tech">Flask • MySQL • Automation • Inventory Management</p>
-                        <div class="icons">
-                            <a href="https://github.com/Youcef-bel" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="portfolio-item">
+                    <div class="portfolio-images">
+                        <img src="media/ads1.png" alt="Marketing AI agent campaign analysis" loading="lazy">
+                        <img src="media/ads2.png" alt="Marketing AI agent campaign optimization" loading="lazy">
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="hover-items">
-                        <h3>Black Friday Sales Analysis & Prediction</h3>
-                        <p class="project-tech">EDA • Feature Engineering • Regression Models</p>
-                        <div class="icons">
-                            <a href="https://github.com/Youcef-bel/DA_projects/blob/main/black-friday-sale-data-analysis-and-prediction.ipynb" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                    <div class="project-content">
+                        <p class="project-category">AI Agent · Marketing</p>
+                        <h3>Marketing AI Agent</h3>
+                        <p class="project-description">Private AI-powered tools analyze Meta and Google Ads campaigns, creatives, headlines, and performance metrics, then take actions to optimize campaigns.</p>
+                        <ul class="project-tags"><li>Meta Ads</li><li>Google Ads</li><li>Campaign optimization</li></ul>
+                        <span class="project-link project-link-muted">Private project</span>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="hover-items">
-                        <h3>14-Day Inventory Forecasting</h3>
-                        <p class="project-tech">Time Series • SKU-level Predictions • ML Models</p>
-                        <div class="icons">
-                            <a href="https://github.com/Youcef-bel" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="portfolio-item">
+                    <img src="media/black_friday.png" alt="Black Friday sales data analysis and prediction" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-category">Data Analysis · Kaggle</p>
+                        <h3>Black Friday Sale Analysis</h3>
+                        <p class="project-description">Explore shopping behavior and build predictive models with Black Friday sales data.</p>
+                        <ul class="project-tags"><li>EDA</li><li>Feature engineering</li><li>Regression</li></ul>
+                        <a href="https://www.kaggle.com/code/youcefbel/black-friday-sale-data-analysis-and-prediction" class="project-link" target="_blank" rel="noreferrer">View on Kaggle <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </div>
-                </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container certificates" id="certificates">
+            <div class="main-title">
+                <h2>Certificates</h2>
+            </div>
+            <div class="certificates-list">
+                <article class="certificate-item">
+                    <div class="certificate-meta">
+                        <span class="certificate-type">AI Engineer for Data Scientists Associate</span>
+                        <span class="certificate-issuer">DataCamp</span>
+                    </div>
+                    <p class="certificate-date">Issued Jul 2026 · Expires Jul 2028</p>
+                    <p class="certificate-id">Credential ID: <strong>AEDS0017220616621</strong></p>
+                    <a href="https://www.datacamp.com/certificate/AEDS0017220616621" target="_blank" rel="noreferrer">View credential</a>
+                </article>
+
+                <article class="certificate-item">
+                    <div class="certificate-meta">
+                        <span class="certificate-type">Microsoft Fabric Analytics Engineer Associate</span>
+                        <span class="certificate-issuer">Microsoft</span>
+                    </div>
+                    <p class="certificate-date">Issued Aug 2026 · Expires Aug 2027</p>
+                    <p class="certificate-id">Credential ID: <strong>704AABFE605FE2AB</strong></p>
+                    <a href="https://learn.microsoft.com/en-us/users/youcefbelmokhtar-1604/credentials/704aabfe605fe2ab" target="_blank" rel="noreferrer">View credential</a>
+                </article>
             </div>
         </section>
         
@@ -357,55 +229,20 @@
                                 <a href="https://github.com/Youcef-bel" target="_blank" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
+                                <a href="https://www.kaggle.com/youcefbel" target="_blank" title="Kaggle">
+                                    <i class="fab fa-kaggle"></i>
+                                </a>
                                 <a href="mailto:youcefbelmokhtar911@gmail.com" title="Email">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-      
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
     <script src="app.js"></script>
 </body>
 </html>
