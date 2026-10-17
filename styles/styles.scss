@@ -6,37 +6,37 @@
 }
 
 :root {
-    --color-primary: #0a0a0a;
-    --color-secondary: #00d4ff;
-    --color-accent: #7c3aed;
-    --color-white: #e8e8e8;
-    --color-black: #000000;
-    --color-grey0: #1a1a1a;
-    --color-grey-1: #c4c4c4;
-    --color-grey-2: #8a8a8a;
-    --color-grey-3: #6c6c6c;
-    --color-grey-4: #2a2a2a;
-    --color-grey-5: #1f1f1f;
-    --color-grey-6: #0f0f0f;
+    --color-primary: #F5F0E5;
+    --color-secondary: #A16F51;
+    --color-accent: #E8DFAE;
+    --color-white: #28251F;
+    --color-black: #FAF9F5;
+    --color-grey0: #FAF9F5;
+    --color-grey-1: #655E52;
+    --color-grey-2: #8D847B;
+    --color-grey-3: #A89F96;
+    --color-grey-4: #EFE7D9;
+    --color-grey-5: #E7DFD1;
+    --color-grey-6: #2A261F;
     --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.5);
-    --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.3);
-    --glow-purple: 0 0 20px rgba(124, 58, 237, 0.3);
+    --box-shadow-1: 0 3px 15px rgba(40, 37, 31, 0.12);
+    --glow-cyan: 0 0 20px rgba(232, 223, 174, 0.35);
+    --glow-purple: 0 0 20px rgba(161, 111, 81, 0.22);
 }
 
 .light-mode {
-    --color-primary: #ffffff;
-    --color-secondary: #00a8cc;
-    --color-accent: #6366f1;
-    --color-white: #2d2d2d;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #4a4a4a;
-    --color-grey-2: #6c6c6c;
-    --color-grey-3: #8a8a8a;
-    --color-grey-4: #e5e5e5;
-    --color-grey-5: #f0f0f0;
-    --color-grey-6: #1a1a1a;
+    --color-primary: #F7F3EA;
+    --color-secondary: #A16F51;
+    --color-accent: #E8DFAE;
+    --color-white: #28251F;
+    --color-black: #FEFCF9;
+    --color-grey0: #FEFCF9;
+    --color-grey-1: #655E52;
+    --color-grey-2: #7E766D;
+    --color-grey-3: #9A9087;
+    --color-grey-4: #F0EADF;
+    --color-grey-5: #E7DFD1;
+    --color-grey-6: #2A261F;
 }
 
 body {
@@ -485,7 +485,7 @@ section {
         .hover-items {
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.95) 0%, rgba(124, 58, 237, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(232, 223, 174, 0.96) 0%, rgba(161, 111, 81, 0.96) 100%);
             position: absolute;
             left: 0;
             top: 0;
