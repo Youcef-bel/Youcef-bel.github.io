@@ -91,7 +91,7 @@
                 status.textContent = '';
             } catch (error) {
                 status.textContent = error instanceof TypeError
-                    ? 'The assistant is temporarily unreachable. Please retry shortly; if this continues, its service may be asleep or unavailable.'
+                    ? 'Your browser could not access the chat API. If this works locally but not on the deployed site, allow https://youcef-bel.github.io in the API CORS settings.'
                     : error.message || 'Something went wrong. Please try again.';
                 status.classList.add('is-error');
             } finally {

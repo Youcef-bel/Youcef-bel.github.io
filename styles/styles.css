@@ -1314,3 +1314,233 @@ header {
     height: 50px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .top-nav {
+    width: calc(100% - 1rem);
+    gap: 0.5rem;
+    padding: 0.6rem 0.7rem;
+  }
+
+  .nav-brand {
+    flex: 0 0 auto;
+    font-size: 0.95rem;
+  }
+
+  .nav-links {
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: flex-start;
+    gap: 0.1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    flex: 0 0 auto;
+    padding: 0.45rem 0.55rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  header {
+    width: calc(100% - 1rem);
+    padding: 0.8rem !important;
+  }
+
+  .header-content {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .header-content .left-header {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-content .left-header .image {
+    width: min(68%, 240px) !important;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto !important;
+  }
+
+  .header-content .left-header .image img {
+    display: block;
+    border-radius: inherit;
+  }
+
+  .header-content .right-header {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .header-content .right-header .name {
+    padding-top: 0.5rem;
+    font-size: clamp(1.8rem, 8vw, 2.4rem) !important;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .header-content .right-header .headline,
+  .header-content .right-header .tagline {
+    text-align: center;
+  }
+
+  .header-content .right-header p {
+    margin: 0.8rem 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .header-content .btn-con {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .header-content .btn-con .main-btn {
+    margin-left: 0 !important;
+  }
+
+  .main-btn .btn-text {
+    padding: 0 1rem;
+  }
+
+  .main-btn .btn-icon {
+    padding: 0.8rem;
+  }
+
+  .page-shell {
+    width: calc(100% - 1rem);
+    margin-bottom: 1rem;
+  }
+
+  .container,
+  section {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .chat-section {
+    max-width: 100%;
+    margin: 0 auto 1rem;
+    padding: 1.5rem 1rem !important;
+  }
+
+  .chat-heading .chat-title {
+    font-size: 1.9rem;
+  }
+
+  .chat-form {
+    gap: 0.35rem;
+  }
+
+  .chat-form input {
+    padding: 0.7rem 0.5rem;
+    font-size: 16px;
+  }
+
+  .chat-submit {
+    min-width: 72px;
+    padding: 0.7rem 0.75rem;
+  }
+
+  .portfolios {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding-bottom: 0;
+  }
+
+  .portfolios .portfolio-item > img,
+  .portfolios .portfolio-item .portfolio-images {
+    height: 190px;
+    flex-basis: 190px;
+  }
+
+  .project-content {
+    padding: 1.1rem;
+  }
+
+  .certificates-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .certificate-item {
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  .certificate-meta {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+  }
+
+  .certificate-type,
+  .certificate-id,
+  .certificate-id strong {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-content-con {
+    padding-top: 1rem;
+  }
+
+  .contact-content-con .left-contact h4 {
+    font-size: 1.35rem;
+    line-height: 1.35;
+  }
+
+  .contact-content-con .left-contact p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-content-con .left-contact .contact-info .contact-item {
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .contact-content-con .left-contact .contact-info .contact-item p {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-content-con .left-contact .contact-info .contact-item .icon {
+    grid-template-columns: 28px auto;
+  }
+
+  .contact-content-con .left-contact .contact-icon {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .main-title h2 {
+    font-size: 2rem;
+  }
+
+  .main-title h2 span {
+    font-size: inherit;
+  }
+
+  .main-title h2 .bg-text {
+    font-size: 2.6rem;
+  }
+}
